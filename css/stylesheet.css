@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap");
+
+:root {
+  --mainColor: #ffc527;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section button{
+  align-items: center;
+}
+
+.section__title {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.section__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  width: 220px;
+  height: 5px;
+  background-color: var(--mainColor);
+}
+
+.navbar {
+  box-shadow: 1px 2px 5px #ebebeb;
+}
+
+.home {
+  height: 600px;
+  background-size: cover;
+  background-image: url("../images/slide-bg-1.jpg");
+  padding: 1px;
+}
+
+.home-item {
+  width: 50%;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+.home-item button{
+  text-align: left;
+  direction: ltr;
+}
+
+@media (max-width: 768px) {
+  .home {
+    height: 400px;
+  }
+
+  .home-item {
+    width: 100%;
+  }
+}
+
+.home-item h2 {
+  color: #fff;
+  font-size: 60px;
+}
+
+.home-item p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.about__item p {
+  margin: 50px 0;
+  font-size: large;
+}
+
+.about__item button {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.news .news-left,
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.news .news-left img,
+.footer-left img {
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.subscribe {
+  height: 450px;
+  background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  padding: 1px;
+  position: relative;
+}
+
+.subscribe__item {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.subscribe__item h2 {
+  font-size: 40px;
+}
+
+.subscribe__item .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__item .form input {
+  width: 80%;
+}
+
+.subscribe__item button {
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .subscribe__item {
+    width: 80%;
+  }
+
+  .subscribe__item .form {
+    flex-direction: column;
+  }
+
+  .subscribe__item .form input,
+  .subscribe__item button {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #071c33;
+  color: #fff;
+}
+
+footer h3 {
+  background: #fff;
+  color: #222;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.footer-left {
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+    
+}
+
+.footer-left img {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 1px;
+  box-sizing: 2px;
+  max-width: 70%;
+}
+
+/* *********** Blog ***/
+.breadcrumb {
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  float: right;
+}
+
+.blog .jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.blog .jumbotron .blog-desc {
+  width: 55%;
+}
+
+.blog .jumbotron .blog-desc h4 {
+  font-size: 18px;
+}
+
+.blog .jumbotron .blog-img {
+  width: 40%;
+}
+
+
+.navbar {
+  box-shadow: 1px 2px 5px #ebebeb;
+}
+
+
+.home {
+  height: 600px;
+  background-size: cover;
+  background-image: url(../images/slide-bg-1.jpg);
+  padding: 1px;
+}
+
+.home_item {
+  margin-right: 15%;
+  margin-top: auto;
+  width: 50%;
+}
+
+.home-item {
+  width: 50%;
+  margin-top: 15%;
+  margin-right: auto;
+}
+
+.home-item h2 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.home-item p {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media(max-width: 760px) {
+  .subscribe__item {
+    width: 80%;
+  }
+
+  .subscribe__item .form {
+    flex-direction: column;
+  }
+
+  .home-item {
+    width: 100%;
+    text-align: right;
+    display: flex;
+  }
+
+  .home {
+    height: 400px;
+  }
+}
+
+.about__item p {
+  margin: 40px 0;
+  margin-left: auto;
+  font-size: 25px;
+}
+
+
+.about__item .about__img {
+  align-items: center !important;
+  display: flex;
+}
+
+.about__img {
+  height: 40px;
+  width: 40px;
+  margin-left: 0;
+  margin-right: 8.7%;
+  width: 33%;
+}
+
+
+.about__item button {
+  margin-bottom: 15px;
+  text-align: center !important;
+  
+}
+
+.news .news-left,
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.news .news-left img,
+.footer-left img {
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.subscribe {
+  height: 450px;
+  background-image: cover;
+  background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+  padding: 1px;
+  position: relative;
+}
+
+.subscribe__item {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.subscribe__item h2 {
+  font-size: 40px;
+}
+
+
+.subscribe__item .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__item .form input {
+  width: 88%;
+}
+
+.subscribe__item button {
+  width: 15%;
+}
+
+footer {
+  background-color: #071c33;
+  color: #fff;
+}
+
+footer h3 {
+  background: #fff;
+  color: #071c33;
+  font-size: 16px;
+  margin: 0 0 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.footer-left {
+  font-size: 12px;
+}
+
+.footer-left img {
+  max-width: 70px;
+}
+
+/* Blog */
+.breadcrumb {
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.breadcrumb-item .breadcrumb-item::before {
+  float: right;
+}
+
+.blog .jumbtron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--mainColor);
+}
+
+.blog-desc {
+  background-color: #f1f1f1 !important;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.blog-desc h4 p {
+  background-color: #f1f1f1 !important;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.blog .jumbtron .blog-desc {
+  width: 55%;
+}
+
+.blog .jumbtron .blog-img {
+  width: 25%;
+  position: top;
+}
+
+.blog .jumbtron .blog-desc h4 {
+  font-size: 12px;
+}
+
+
+.blog .blog-img {
+  align-content: flex-end;
+  float: left;
+}
+
+
+.blog .jumbotron .blog-img {
+  width: 40%;
+}
+
+
+.my-4 {
+  margin-top: 1.5rem !important;
+  
+}
+
+.list-unstyled .input-group {
+  position: right;
+  list-style: none;
+}
